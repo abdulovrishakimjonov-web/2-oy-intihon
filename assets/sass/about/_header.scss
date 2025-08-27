@@ -1,0 +1,141 @@
+.header-select select {
+  border: none;
+  border: 1px solid white;
+  outline: none;
+}
+.header {
+    margin-bottom: 30px;
+}
+.header-select2 select {
+  border: none;
+  border: 1px solid white;
+  outline: none;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding: 40px 0;
+}
+.header-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-select2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.header-call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 90px;
+}
+.header-secon select {
+  width: 50px;
+  padding: 10px;
+  box-shadow: 0 10px 5px, 0, rgba(0, 0, 0, 0.1);
+}
+.header-secon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header-menu {
+  display: none;
+}
+
+.header-menu:active {
+  background-color: red;
+}
+
+.dropbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropcheck {
+  position: absolute;
+  left: -9999px;
+}
+
+.dropcheck:checked ~ .dropdown-content {
+  display: block;
+}
+
+.dropcheck:checked + .dropbtn {
+  background-color: #3e8e41;
+}
+
+@media (max-width: 650px) {
+  .header-menu {
+    display: block;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-number {
+    display: none;
+  }
+  .header-img {
+    width: 99px;
+  }
+}
+@media (max-width: 350px) {
+   .header-img {
+   width: 60px;
+   }
+   .dropdown-content a {
+     width: 60px;     
+   }
+
+}

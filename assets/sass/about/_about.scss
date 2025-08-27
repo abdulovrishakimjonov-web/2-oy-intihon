@@ -1,0 +1,78 @@
+.about-main h1 {
+  font-size: 60px;
+  color: hsla(41, 99%, 51%, 1);
+  border: 1px solid white;
+  padding: 5px;
+}
+.about-main p {
+  font-size: 35px;
+  color: rgba(0, 0, 0, 0.725);
+  padding: 5px;
+}
+.about-main button {
+  width: 255px;
+  background: hsla(41, 99%, 51%, 1);
+  color: white;
+  padding: 10px;
+  border: none;
+  padding: 5px;
+  transition: 0.5s;
+}
+.about-main button:hover {
+  background-color: rgba(233, 240, 16, 0.673);
+}
+.about-main {
+  padding: 10px;
+}
+.about-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.about-img img {
+  transition: 0.5s;
+  width: 50px;
+}
+.about-img img:hover {
+  background-color: rgb(94, 94, 19);
+}
+.about-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+//   position: absolute;
+}
+@media (max-width: 1300px) {
+  .about-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 610px) {
+  .about-left {
+    display: block;
+  }
+  .about-img {
+    display: none;
+  }
+  .about-main h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .about-main p {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 350px) {
+  .about-main h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .about-main p {
+    font-size: 16px;
+    text-align: center;
+  }
+}

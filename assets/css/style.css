@@ -1,0 +1,311 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 15px;
+  border: 1px solid red;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.header-select select {
+  border: none;
+  border: 1px solid white;
+  outline: none;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.header-select2 select {
+  border: none;
+  border: 1px solid white;
+  outline: none;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding: 40px 0;
+}
+
+.header-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-select2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.header-call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 90px;
+}
+
+.header-secon select {
+  width: 50px;
+  padding: 10px;
+  box-shadow: 0 10px 5px, 0, rgba(0, 0, 0, 0.1);
+}
+
+.header-secon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header-menu {
+  display: none;
+}
+
+.header-menu:active {
+  background-color: red;
+}
+
+.dropbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropcheck {
+  position: absolute;
+  left: -9999px;
+}
+
+.dropcheck:checked ~ .dropdown-content {
+  display: block;
+}
+
+.dropcheck:checked + .dropbtn {
+  background-color: #3e8e41;
+}
+
+@media (max-width: 650px) {
+  .header-menu {
+    display: block;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-number {
+    display: none;
+  }
+  .header-img {
+    width: 99px;
+  }
+}
+@media (max-width: 350px) {
+  .header-img {
+    width: 60px;
+  }
+  .dropdown-content a {
+    width: 60px;
+  }
+}
+.about-main h1 {
+  font-size: 60px;
+  color: hsl(41, 99%, 51%);
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.about-main p {
+  font-size: 35px;
+  color: rgba(0, 0, 0, 0.725);
+  padding: 5px;
+}
+
+.about-main button {
+  width: 255px;
+  background: hsl(41, 99%, 51%);
+  color: white;
+  padding: 10px;
+  border: none;
+  padding: 5px;
+  transition: 0.5s;
+}
+
+.about-main button:hover {
+  background-color: rgba(233, 240, 16, 0.673);
+}
+
+.about-main {
+  padding: 10px;
+}
+
+.about-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-img img {
+  transition: 0.5s;
+  width: 50px;
+}
+
+.about-img img:hover {
+  background-color: rgb(94, 94, 19);
+}
+
+.about-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1300px) {
+  .about-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 610px) {
+  .about-left {
+    display: block;
+  }
+  .about-img {
+    display: none;
+  }
+  .about-main h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .about-main p {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 350px) {
+  .about-main h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .about-main p {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+.border-slect {
+  width: 382px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.img-gul {
+  position: relative;
+  width: 566px;
+}
+
+.img-javon {
+  position: absolute;
+}
+
+.imm1 {
+  position: absolute;
+  z-index: -1;
+}
+
+.imm2 {
+  position: relative;
+  width: 300px;
+}
+
+.budoi {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid black;
+  width: 302px;
+}
+
+.budoi p {
+  width: 222px;
+  font-size: 18px;
+}
+
+.bu-gul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 70px;
+}
+
+/*# sourceMappingURL=style.css.map */

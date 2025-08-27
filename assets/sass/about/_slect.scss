@@ -1,0 +1,52 @@
+.border-slect {
+    width: 382px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.slect-abu {
+    // position: absolute;
+}
+.populan {
+}
+
+.img-gul {
+    position: relative;
+    width: 566px;
+}
+
+.img-javon {
+    position: absolute;
+}
+
+.imm1 {
+    position: absolute;
+    z-index: -1;
+}
+
+
+.imm2 {
+    position: relative;
+    width: 300px;
+}
+
+.budoi {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid black;
+    width: 302px;
+}
+
+.budoi p {
+    width: 222px;
+    font-size: 18px;
+}
+
+.bu-gul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 70px;
+}
