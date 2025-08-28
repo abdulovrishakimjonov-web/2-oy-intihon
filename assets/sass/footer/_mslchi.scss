@@ -1,0 +1,205 @@
+.malchi-main p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.349);
+  cursor: pointer;
+}
+.malchi-main h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.malchi-main {
+  text-align: center;
+}
+.malchi-left {
+  width: 864px;
+}
+.malchi-left p {
+  width: 641px;
+  color: dimgrey;
+}
+.malchi-left h3 {
+  padding: 10px;
+}
+.malchi-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.past-flex {
+  width: 50%;
+  background-color: rgba(169, 169, 169, 0.19);
+  border-radius: 10px;
+}
+.igrut p {
+  font-size: 14px;
+  color: dimgrey;
+  width: 364px;
+  padding: 10px;
+}
+.igrut h3 {
+    font-size: 26px;
+    padding: 10px;
+}
+.past-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.malchi-rait {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.malchi-main {
+  p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.349);
+    cursor: pointer;
+    margin: 0 auto 12px auto;
+    max-width: 95vw;
+    transition: color 0.3s;
+    &:hover {
+      color: #ffb41c;
+    }
+  }
+
+  h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    word-break: break-word;
+    transition: font-size 0.3s;
+    @media (max-width: 700px) {
+      font-size: 32px;
+    }
+    @media (max-width: 400px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.malchi-flex {
+  @media (max-width: 950px) {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.malchi-left {
+  width: 864px;
+  max-width: 98vw;
+  margin: 0 auto;
+  transition: width 0.3s;
+
+  p {
+    width: 641px;
+    max-width: 96vw;
+    color: dimgrey;
+    margin: 0 auto 10px auto;
+    transition: color 0.3s, font-size 0.3s;
+    &:hover {
+      color: #ffb41c;
+    }
+    @media (max-width: 700px) {
+      width: 95vw;
+      font-size: 12px;
+    }
+    @media (max-width: 400px) {
+      width: 93vw;
+      font-size: 10px;
+    }
+  }
+
+  h3 {
+    padding: 10px;
+    transition: font-size 0.3s, padding 0.3s;
+    font-size: 22px;
+    @media (max-width: 700px) {
+      font-size: 16px;
+      padding: 7px;
+    }
+    @media (max-width: 400px) {
+      font-size: 12px;
+      padding: 4px;
+    }
+  }
+}
+
+.past-flex {
+  width: 50%;
+  background-color: rgba(169, 169, 169, 0.19);
+  border-radius: 10px;
+  transition: gap 0.3s, width 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.05);
+  padding: 10px;
+
+  @media (max-width: 950px) {
+    width: 98vw;
+    gap: 12px;
+    flex-direction: column;
+    padding: 10px 3px;
+  }
+  @media (max-width: 400px) {
+    gap: 5px;
+    border-radius: 5px;
+    padding: 6px 1px;
+  }
+  &:hover {
+    box-shadow: 0 8px 24px rgba(255,180,28,0.19);
+  }
+}
+
+.igrut p {
+  font-size: 14px;
+  color: dimgrey;
+  width: 364px;
+  max-width: 92vw;
+  padding: 10px;
+  transition: color 0.3s, font-size 0.3s, padding 0.3s;
+  &:hover {
+    color: #ffb41c;
+  }
+  @media (max-width: 700px) {
+    font-size: 10px;
+    width: 98vw;
+    padding: 6px;
+  }
+  @media (max-width: 400px) {
+    font-size: 8px;
+    width: 97vw;
+    padding: 2px;
+  }
+}
+
+.igrut h3 {
+  font-size: 26px;
+  padding: 10px;
+  transition: font-size 0.3s, padding 0.3s;
+  @media (max-width: 700px) {
+    font-size: 16px;
+    padding: 6px;
+  }
+  @media (max-width: 400px) {
+    font-size: 12px;
+    padding: 3px;
+  }
+}
+
+.malchi-rait {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  transition: gap 0.3s, margin-bottom 0.3s;
+  @media (max-width: 700px) {
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  @media (max-width: 400px) {
+    gap: 5px;
+    margin-bottom: 5px;
+  }
+}
