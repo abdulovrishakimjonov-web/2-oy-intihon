@@ -270,7 +270,7 @@ img {
 
 .img-gul {
   position: relative;
-  width: 566px;
+  width: 466px;
 }
 
 .img-javon {
@@ -284,20 +284,23 @@ img {
 
 .imm2 {
   position: relative;
-  width: 300px;
+  width: 340px;
 }
 
 .budoi {
   display: flex;
   align-items: center;
   background-color: #fff;
-  border: 2px solid black;
-  width: 302px;
+  width: 252px;
+  text-align: center;
+  position: relative;
+  left: 41px;
 }
 
 .budoi p {
   width: 222px;
   font-size: 18px;
+  padding: 10px;
 }
 
 .bu-gul {
@@ -306,6 +309,91 @@ img {
   justify-content: center;
   position: relative;
   top: 70px;
+}
+
+.slect-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 110px;
+}
+
+.slect-flex2 {
+  display: flex;
+  margin-bottom: 120px;
+}
+
+.line-h1 {
+  font-size: 30px;
+  color: darkgray;
+  margin-bottom: 30px;
+}
+
+.slect-h1 {
+  font-size: 45px;
+  color: darkgray;
+}
+
+.aline-po {
+  position: absolute;
+  width: 415px;
+}
+
+.aline-po button {
+  position: relative;
+  width: 350px;
+}
+
+.line button {
+  position: relative;
+  border: none;
+  background: hsl(41, 99%, 51%);
+  color: white;
+  margin-top: 30px;
+  padding: 13px;
+}
+
+.aline {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 215px;
+  margin-bottom: 130px;
+}
+
+.aline2 {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 212px;
+  margin-bottom: 150px;
+}
+
+.jeco {
+  margin-bottom: 50px;
+  font-size: 30px;
+  color: darkgray;
+}
+
+.jeco-left img {
+  width: 430px;
+}
+
+.jeco-main button {
+  width: 200px;
+  background-color: white;
+  border: none;
+  padding: 8px;
+  position: relative;
+  left: 100px;
+  top: -25px;
+}
+
+.jeco-rait {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
