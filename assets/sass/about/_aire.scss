@@ -1,0 +1,178 @@
+.cfb-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .cfb-section {
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    min-height: 230px;
+    position: relative;
+    background: #e6cfa4;
+    overflow: hidden;
+
+    &__bg {
+      flex: 1 1 0;
+      min-width: 0;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        min-height: 230px;
+        object-fit: cover;
+        display: block;
+        filter: brightness(0.85);
+      }
+      .cfb-section__logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+        img {
+          max-width: 230px;
+          width: 90vw;
+          height: auto;
+          display: block;
+          filter: drop-shadow(0 2px 8px rgba(0,0,0,0.13));
+        }
+      }
+    }
+
+    &__form {
+      flex: 1 1 0;
+      min-width: 0;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 24px;
+      box-sizing: border-box;
+      min-height: 230px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 3px 18px 0 rgba(0,0,0,0.07);
+
+      .cfb-form {
+        width: 100%;
+        max-width: 430px;
+        margin: 0 auto;
+
+        h2 {
+          font-size: 26px;
+          font-weight: 400;
+          letter-spacing: 1.2px;
+          margin-bottom: 7px;
+          color: #222;
+          font-family: 'Montserrat', Arial, sans-serif;
+
+          span {
+            font-weight: 600;
+            font-size: 28px;
+          }
+        }
+        p {
+          color: #666;
+          margin-bottom: 20px;
+          font-size: 16px;
+          font-family: 'Montserrat', Arial, sans-serif;
+        }
+        &__fields {
+          width: 100%;
+        }
+        &__row {
+          display: flex;
+          gap: 18px;
+          margin-bottom: 10px;
+
+          @media (max-width: 550px) {
+            flex-direction: column;
+            gap: 0;
+          }
+        }
+        &__field {
+          flex: 1 1 0;
+          display: flex;
+          flex-direction: column;
+          label {
+            font-size: 14px;
+            margin-bottom: 3px;
+            color: #222;
+            font-weight: 600;
+          }
+          input {
+            padding: 6px 0;
+            font-size: 15px;
+            border: none;
+            border-bottom: 1.2px solid #cfd2d6;
+            outline: none;
+            background: transparent;
+            transition: border-color 0.25s;
+            &:focus {
+              border-color: #ffb41c;
+              background: #fffbe5;
+            }
+          }
+        }
+        &__field--full {
+          flex: 1 1 100%;
+        }
+        button {
+          margin-top: 15px;
+          width: 100%;
+          background: #ffb41c;
+          color: #fff;
+          border: none;
+          padding: 10px 0;
+          font-size: 16px;
+          font-weight: 600;
+          border-radius: 2px;
+          cursor: pointer;
+          transition: 0.24s, box-shadow 0.28s;
+          box-shadow: 0 2px 6px 0 rgba(255,180,28,0.08);
+          &:hover {
+            background: #ed9b23;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .cfb-section {
+    flex-direction: column;
+    min-height: unset;
+    &__bg, &__form {
+      min-height: 160px;
+      max-width: unset;
+      width: 100%;
+    }
+    &__form {
+      padding: 24px 8px;
+    }
+    .cfb-section__logo img {
+      max-width: 150px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .cfb-section__form .cfb-form h2 { font-size: 18px; }
+  .cfb-section__form .cfb-form p { font-size: 12px; }
+  .cfb-section__form .cfb-form button { font-size: 14px; }
+}
+@media (max-width: 400px) {
+  .cfb-section__form {
+    padding: 8px 2px;
+  }
+  .cfb-section__form .cfb-form h2 { font-size: 12px; }
+  .cfb-section__form .cfb-form p { font-size: 9px; }
+  .cfb-section__form .cfb-form button { font-size: 11px; }
+}

@@ -1,0 +1,86 @@
+.absalut-main {
+    border: 480px;
+    width: 480px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.asd h2 {
+    font-size: 20px;
+}
+.asd p {
+    font-size: 16px;
+    color: darkgrey;
+}
+.asd b {
+    font-size: 16px;
+    color:hsla(41, 99%, 51%, 1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.absalut-main {
+  @media (max-width: 600px) {
+    flex-direction: column;
+    max-width: 98vw;
+    gap: 12px;
+    padding: 14px 6px;
+    margin: 12px auto;
+  }
+
+  @media (max-width: 350px) {
+    max-width: 100vw;
+    padding: 7px 2px;
+    gap: 6px;
+  }
+}
+
+.absalut-img {
+
+  @media (max-width: 600px) {
+    width: 60px;
+    height: 60px;
+  }
+  @media (max-width: 350px) {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+
+
+.asd h2 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #232323;
+  font-weight: 600;
+  @media (max-width: 600px) { font-size: 16px; }
+  @media (max-width: 350px) { font-size: 13px; }
+}
+
+.asd p {
+  font-size: 16px;
+  color: darkgrey;
+  margin-bottom: 8px;
+  @media (max-width: 600px) { font-size: 12px; }
+  @media (max-width: 350px) { font-size: 10px; }
+}
+
+.asd b {
+  font-size: 16px;
+  color: hsla(41, 99%, 51%, 1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  @media (max-width: 600px) { font-size: 12px; }
+  @media (max-width: 350px) { font-size: 10px; }
+}
